@@ -8,7 +8,7 @@ let blob3 = {
   y: 0,
 
   // Visual properties
-  r: 26, // Base radius
+  r: 100, // Base radius
   points: 48, // Number of points used to draw the blob
   wobble: 7, // Edge deformation amount
   wobbleFreq: 0.9,
@@ -164,7 +164,7 @@ function drawBlobCircle(b) {
     const n = noise(
       cos(a) * b.wobbleFreq + 100,
       sin(a) * b.wobbleFreq + 100,
-      b.t,
+      b.t
     );
 
     const r = b.r + map(n, 0, 1, -b.wobble, b.wobble);
