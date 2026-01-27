@@ -11,7 +11,7 @@ let blob3 = {
   r: 20, // Base radius
   points: 48, // Number of points used to draw the blob
   wobble: 7, // Edge deformation amount
-  wobbleFreq: 10,
+  wobbleFreq: 50,
 
   // Time values for breathing animation
   t: 0,
